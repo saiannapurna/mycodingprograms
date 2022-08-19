@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int arr[]={2,3};
+	int len=sizeof(arr)/sizeof(int);
+	int i,f,sum,h=0,n;
+	for(i=0;i<len;i++)
+	{
+	    f=1;sum=0;
+			n=arr[i];
+		while(n>0)
+		{
+			f=f*n;
+			n--;
+		}
+		sum=sum+f;	
+			printf("%d ",sum);
+			h=sum+h;
+	}
+		printf("\n%d",h);
+	return 0;
+
+	}
