@@ -1,0 +1,39 @@
+#include <stdio.h>
+int main()
+{
+    int a[100][100];
+    int r,c,i,j,n,sum=0;
+    printf("no of rows");
+    scanf("%d",&r);
+    printf("no of coloumns");
+    scanf("%d",&c);
+    printf("enter the elements");
+    for(i=0;i<r;i++)
+    {
+        for(j=1;j<c+1;j++)
+        {
+            scanf("%d",&a[i][j]);
+        }
+    }
+    for(i=0;i<r;i++)
+    {
+        for(j=1;j<r+1;j++)
+        {
+            printf("%d ",a[i][j]);
+        }
+        printf("\n");
+    }
+    printf("enter coloumn number is =");
+    scanf("%d",&n);
+    for(j=1;j<c+1;j++)
+    { 
+        {for(i=0;i<r;i++)
+            {if(j==n)
+                sum=sum+a[i][n];
+         }
+        }  
+ }
+     printf("%d coloumn sum is %d ",n,sum);
+    
+    return 0;
+}
