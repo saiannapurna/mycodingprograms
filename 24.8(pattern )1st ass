@@ -1,0 +1,33 @@
+#include <stdio.h>
+int main()
+{
+    int i,n,c,j;
+    printf("Enter n value : ");
+    scanf("%d",&n);
+    for(i=1;i<=n;i++)
+    {c=n;
+        for(j=n;j>n-i;j--)
+        {
+            printf("%d ",c);
+            c--;
+        }
+        printf("\n");
+    }
+    return 0;
+}
+
+
+
+
+
+
+Test Case: 1
+Input : 
+Enter n value:6
+Output : 
+ 6
+ 6 5
+ 6 5 4
+ 6 5 4 3
+ 6 5 4 3 2
+ 6 5 4 3 2 1
