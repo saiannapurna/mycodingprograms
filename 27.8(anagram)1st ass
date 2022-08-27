@@ -1,0 +1,49 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+	char   str1[20];
+	char str2[20];
+	int i,j,n,m,temp,tempo,cnt=0;
+	gets(str1);
+	gets(str2);
+	n=strlen(str1);
+	m=strlen(str2);
+	for(i=0;i<n-i;i++)
+	{
+		for(j=0;j<n-i-1;j++)
+		{
+			if(str1[j]>str1[j+1])
+			{
+				temp=str1[j];
+				str1[j]=str1[j+1];
+				str1[j+1]=temp;
+			}
+		}
+	}
+	for(i=0;i<m-i;i++)
+	{
+		for(j=0;j<m-i-1;j++)
+		{
+			if(str2[j]>str2[j+1])
+			{
+				tempo=str2[j];
+				str2[j]=str2[j+1];
+				str2[j+1]=tempo;
+			}
+		}
+	}
+	for(i=0;str1[i]!='\0';i++)
+	{
+		if(str1[i]==str2[i])
+		cnt++;
+	}
+	if(cnt==n){
+	
+	printf("anagram\n");
+	}
+	else{
+	
+	printf("not an anagram");}	
+	return 0;
+}
