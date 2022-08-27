@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+        char str[100];
+        gets(str);
+        int i,cnt=0,ant=0,h=0;
+        for(i=0;str[i]!='\0';i++)
+        {
+            if(isupper(str[i]))
+            {
+                cnt++;
+            }
+            if(islower(str[i])){
+			
+            ant++;}
+            if(isdigit(str[i])){
+			
+            h++;}
+           
+        }
+        printf("count of upper letter :%d\ncount of lower letters :%d\ncount of nnumbers: %d",cnt,ant,h);
+
+    return 0;
+}
+
