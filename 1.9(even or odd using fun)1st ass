@@ -1,0 +1,21 @@
+#include<stdio.h>
+ void main()
+ {
+ 	int i,a,m;
+ 	printf("enter a number :");
+ 	scanf("%d",&m);
+ 	a=evenodd(m);
+		
+ 	if(a==0)
+ 	printf("even");
+ 	else
+ 	printf("odd");
+ 	
+ }
+ int evenodd (int m)
+ {
+ 	if(m%2==0)
+ 	return (0);
+ 	else
+ 	return (1);
+ }
