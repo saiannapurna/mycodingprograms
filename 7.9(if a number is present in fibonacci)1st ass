@@ -1,0 +1,29 @@
+#include<stdio.h>
+int main()
+{
+	int f1=0,flag=0,f2=1,p,sum;
+	int i,n;
+	printf("enter number of terms of fibonacci: ");
+	scanf("%d",&n);
+	printf("enter number");
+	scanf("%d",&p);
+	printf("%d %d ",f1,f2);
+	
+	sum=f1+f2;
+	printf("%d ",sum);
+	for(i=0;i<=n;i++)
+	{    
+		f1=f2;
+		f2=sum;
+		sum=f1+f2;
+	
+		sum=f1+f2;
+		printf("%d ",sum);
+		if(sum==p)
+		flag=1;
+	}
+	if(flag==1)
+	printf("\n%d is present in fibonacci series",p);
+	else
+	printf("\n%d is not present in fibonacci series",p);
+}
